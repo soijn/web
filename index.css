@@ -20,7 +20,42 @@ a:link , a:visited{
 }
 #fullpage .section:nth-child(3){
     background: url(./index.content.jpg)center/cover;
+    position: relative;
 }
+#fullpage .section:nth-child(3) {
+  background: url('./index.content.jpg') center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fullpage .section:nth-child(3) .gallery {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fullpage .section:nth-child(3) .gallery-item {
+  display: block;
+  position: relative;
+  width: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+#fullpage .section:nth-child(3) .gallery-item:hover {
+  transform: scale(1.1);
+}
+
+#fullpage .section:nth-child(3) .gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#fullpage .section:nth-child(4){}
 
 #fullpage .section:nth-child(4) .fp-tableCell{
     display: flex;
